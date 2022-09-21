@@ -1,11 +1,10 @@
-from __future__ import print_function
 from dolfin import *
 from mshr import *
 import numpy as np
 
 import sys
 if len(sys.argv)==1:
-   info("Input parameter is missing. Run the script using 'srun -p express3 -n 36 python axisym_neoHooke.py muf n [kapparatio] [b]'.")
+   info("Input parameter is missing. Run the script using 'python3 axisym_neoHooke.py muf n [kapparatio] [b]'.")
    sys.exit()
 
 muf = Constant(sys.argv[1])
